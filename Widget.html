@@ -1,0 +1,21 @@
+<div>  
+    <form action="http:/localhost:8080/api/upload" method="post" enctype="multipart/form-data" data-dojo-attach-point="form">
+      <div>
+        <div>Text field title: <input type="text" name="title" data-dojo-attach-point="title"/></div>
+      </div>
+      <div>
+        <input type="file" name="multipleFiles" multiple="multiple"  data-dojo-attach-point="imageFile" />
+      </div>
+      <br />
+      <div>
+        <span style="color: red;" data-dojo-attach-point="lblError"></span>
+      </div>
+      <br />
+      <div>
+        <span data-dojo-attach-point="fileToUpload">No file to upload, yet</span>
+      </div>
+      <div>
+        <input type="submit" value="Upload" data-dojo-attach-point="customBtn"></input>
+      </div>
+    </form>
+</div>
